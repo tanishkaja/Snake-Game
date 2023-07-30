@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    color: #fff;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 90px;
+    height: 300px;
+    font-size: 50px;
+    font-weight: 200;
+    font-family: 'Changa', serif;
+    height: 130px;
+}
+
+.how{
+    margin-left: 10px;
+    margin-right: 70px;
+    padding: 15px;
+    font-family: 'Changa', serif;
+    font-size: 30px;
+    font-weight: 200;
+    background-color: rgb(238, 218, 193);
+    border-radius: 15px;
+    cursor: pointer;
+}
+.start{
+    padding: 15px;
+    font-family: 'Changa', serif;
+    font-size: 30px;
+    font-weight: 200;
+    background-color: rgb(238, 218, 193);
+    border-radius: 15px;
+    cursor: pointer;
+}
+.container{
+    background-color: black;
+}
+.img{
+    width: 300px;
+    position: absolute;
+    margin: 70px;
+   background: black;
+}
+.how-toplay{
+    display: none;
+    text-align: center;
+    margin-top: 280px;
+    position: absolute;
+    width: 580px;
+    height: 200px;
+    background: #fff;
+    border-radius: 5px;
+    background: rgb(238, 218, 193);
+    border-radius: 15px;
+}
+.how-toplay.show{
+    display: block;
+    margin: 10px;
+    text-align: center;
+    margin-top: 280px;
+    position: absolute;
+    width: 580px;
+    height: 220px;
+    background: #fff;
+    border-radius: 5px;
+    background: rgb(238, 218, 193);
+    border-radius: 15px;
+}
+.how-toplay span{
+    font-size: 30px;
+    padding-bottom: 40px;
+    font-weight: 100;
+    font-family: 'Changa', serif;
+}
+.how-toplay .info{
+    text-align: left;
+    font-family: 'Changa', serif;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.how-toplay .okBtn{
+    font-size: 20px;
+    font-weight: 800;
+    width: 50px;
+    margin: 10px;
+    text-align: center;
+    font-family: 'Changa', serif;
+    
+} 
+
+@media only screen and (max-width:670px) {
+    .how-toplay.show{
+        width: 480px;
+    }
+}
+@media only screen and (max-width:500px) {
+    .how{
+        font-size: 20px;
+        margin-right: 30px;
+    }
+    .start{
+        font-size: 20px;
+    }
+    p{
+        font-size: 30px;
+    }
+    .how-toplay.show{
+        width: 350px;
+        margin-right: 10px;
+    }
+    .img{
+        width: 200px;
+    }
+}
+@media only screen and (max-width:400px) {
+    .how-toplay.show{
+        width: 330px;
+        margin-right: 10px;
+    }
+}

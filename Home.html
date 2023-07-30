@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Changa:wght@300&family=Cormorant+Garamond:wght@300&family=Crimson+Text:ital@0;1&family=Libre+Baskerville&family=Playfair+Display:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <script src="file.js"></script>
+</head>
+<body>
+    
+    <div >
+        <p class="line">Snake Game</p>
+        <button class="how">How to play</button>
+        <a href="main.html">
+        <button class="start">Start Game</button>
+        </a><br>
+        <div class="container">
+            <img src="images/Untitled.png" class="img">
+        </div>
+    </div>
+    <!-- INSTRUCTIONS CODE -->
+    <div class="how-toplay" id = "howToplay">
+        <span>How to Play!</span>
+        <div class="info">1. Make the snake has to eat the food to grow longer.</div>
+        <div class="info">2. Control the snake using arrow keys.</div>
+        <div class="info">3.Avoid hitting walls and snake body itself.</div>
+        <button class="okBtn">Ok</button>
+    </div>
+      <script>
+        document.querySelector('.how').addEventListener('click', () => {
+        console.log('tg');
+        console.log(document.getElementById('howToplay').classList.add('show'));
+
+        });
+
+        document.querySelector('.okBtn').addEventListener('click', () => {
+        console.log('th');
+        document.getElementById('howToplay').classList.remove('show');
+        });
+        document.querySelector('.start').addEventListener('click',()=>{
+        document.querySelector('.wrapper').classList.add('show');
+        });
+      </script>
+</body>
+</html>

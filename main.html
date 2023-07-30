@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Changa:wght@300&family=Cormorant+Garamond:wght@300&family=Crimson+Text:ital@0;1&family=Libre+Baskerville&family=Playfair+Display:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/980bf5b5cb.js" crossorigin="anonymous"></script>
+    <script src="file.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="game-details">
+            <span class="score">Score: 0</span>
+            <span class="high-score">High Score: 0 </span>
+        </div>
+        <div class="play-board"></div>
+        <div class="controls">
+            <i data-key="ArrowLeft" class="fa-solid fa-arrow-left"></i>
+            <i data-key="ArrowUp" class="fa-solid fa-arrow-up"></i>
+            <i data-key="ArrowRight" class="fa-solid fa-arrow-right"></i>
+            <i data-key="ArrowDown" class="fa-solid fa-arrow-down"></i>
+        </div>
+        <div class="gameover"  id = "game-over" style="display: none;">
+            <span>Game Over!</span><br>
+            <a href="Home.html">
+                <button class="home-button">Home </button>
+            </a>
+            <button class="restart-button">Restart</button>
+        </div>
+    </div>
+</body>
+</html>

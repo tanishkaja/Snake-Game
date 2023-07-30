@@ -1,0 +1,144 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Changa', serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh ;
+    background: #5e5c5c;
+}
+/* the box that we made */
+.wrapper{ 
+    /* vmin is the dimension value% of smaller dimension of the viewport */
+    width: 65vmin; 
+    height: 70vmin;
+    display: flex;
+    flex-direction: column;
+    background: #080808;
+    border-radius: 5px;
+}
+.game-details{
+    color: rgb(238, 218, 193);;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+}
+.play-board{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: repeat(40,1fr)/repeat(40,1fr) ;
+    background: #2b2a2a;
+}
+.play-board .food{
+    background: #d50133;
+    border-radius: 50%;
+}
+.play-board .head{
+    background: rgb(238, 218, 193);
+    border-radius: 50%;
+    
+} 
+.gameover{
+    display: block;
+    font-size: 30px;
+    position: absolute;
+    background: #b4b1b1;
+    text-align: center;
+    /* margin: 100px; */
+    margin-top: 100px;
+    margin-left: 40px;
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+}
+.home-button,.restart-button{
+    margin-top: 20px;
+    font-size: 25px;
+    padding: 5px;
+    background: #5e5c5c;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+.next-level{
+    margin-top: 20px;
+    margin-left: 120px;
+    font-size: 25px;
+    padding: 5px;
+    background: #5e5c5c;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+.controls{
+    display: none;
+    justify-content: space-between;
+}
+.controls i{
+    color:rgb(238, 218, 193);
+    padding: 25px 0 ;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    width: calc(100%/4);
+    border-right: 1px solid #9c9c80;
+}
+@media  screen and (max-width:800px) {
+    .wrapper{
+        width: 90vmin;
+        height: 110vmin;
+    }
+    .game-details{
+        font-size: 1rem;
+        padding: 15px 27px;
+    }
+    .controls{
+        display: flex;
+    }
+    .controls i{
+        padding: 15px 0;;
+        font-size: 1rem;
+    }
+    .gameover{
+        margin-top: 250px;
+        margin-left: 180px;
+    }
+}
+@media  screen and (max-width:700px){
+    .gameover{
+        margin-top: 200px;
+        margin-left: 130px;
+        width: 280px;
+    }
+}
+@media  screen and (max-width:600px){
+    .gameover{
+        margin-top: 200px;
+        margin-left: 100px;
+        width: 250px;
+    }
+}
+@media  screen and (max-width:490px){
+    .gameover{
+        margin-top: 150px;
+        margin-left: 70px;
+        width: 240px;
+    }
+}
+@media  screen and (max-width:380px){
+    .gameover{
+        margin-top: 100px;
+        margin-left: 60px;
+        width: 200px;
+    }
+    .home-button,.restart-button{
+        font-size: 15px;
+    }
+}
